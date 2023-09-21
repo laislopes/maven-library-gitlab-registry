@@ -1,0 +1,6 @@
+deploy:
+  image: maven:latest
+  script:
+    - "mvn deploy -s settings.xml"
+  only:
+    - main
